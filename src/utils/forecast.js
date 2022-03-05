@@ -32,7 +32,7 @@ else if(body.error){
 callback('error',undefined)
 }
 else{
-callback(undefined,body.current.weather_descriptions[0]+' it is currently '+body.current.temperature+' but feels like '+body.current.feelslike)
+callback(undefined,body.current.weather_descriptions[0]+' it is currently '+body.current.temperature+' but feels like '+body.current.feelslike+'since the humidity is'+body.current.humidity+'%')
 }
 })
 
